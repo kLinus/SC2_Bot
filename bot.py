@@ -5,9 +5,8 @@ from absl import app
 import random
 
 class PyAgent(base_agent.BaseAgent):
-    def step(self, obs):
+    def step(self, obs): #defines a function
         super(PyAgent, self).step(obs)
-
         return actions.FUNCTIONS.no_op()
 
 def main(unused_argv):
